@@ -1,19 +1,19 @@
 # title
 
-add environment config
-`vi /etc/systemd/system/edgecore.service`{{execute}}
+add environment config  
+`vi /etc/systemd/system/edgecore.service`{{execute}}  
 
 [Service]
-**Environment=CHECK_EDGECORE_ENVIRONMENT='false'**  --add this line
-Type=simple
-ExecStart=/usr/local/bin/edgecore
-Restart=always
-RestartSec=10
+**Environment=CHECK_EDGECORE_ENVIRONMENT='false'**  --add this line 
+Type=simple  
+ExecStart=/usr/local/bin/edgecore  
+Restart=always  
+RestartSec=10  
 
 
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}
 
-edged:
+edged:  
     **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'  
     cgroupRoot: ""  
     cgroupsPerQOS: true  
