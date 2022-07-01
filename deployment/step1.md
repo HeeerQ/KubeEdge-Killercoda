@@ -17,7 +17,6 @@ mv ./kind /usr/local/bin/kind
 ```{{execute}}  
 
 
-create cluster  
-`kind create cluster --name my-cluster`{{execute}}
+
 
 
