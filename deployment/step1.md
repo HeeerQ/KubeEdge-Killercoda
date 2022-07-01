@@ -21,3 +21,5 @@ create cluster
 `kind create cluster --name my-cluster`{{execute}}
 
 `kubectl get nodes`{{execute}}
+
+`export KUBECONFIG="$(kind get kubeconfig-path --name="my-cluster")"`{{execute}}
