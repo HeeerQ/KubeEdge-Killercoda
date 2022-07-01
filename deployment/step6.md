@@ -1,18 +1,22 @@
-# Setup Edge Side (KubeEdge Worker Node)
+# title
 
-Run keadm gettoken in **cloud side** will return the token, which will be used when joining edge nodes.
+add environment config
+`vi /etc/systemd/system/edgecore.service`{{execute}}
 
-`keadm gettoken`{{execute HOST1}}  
-  
-    
-   
-Next, run keadm join in **edge side** to join edge node.  
-  
-`keadm join --cloudcore-ipport=192.168.20.50:10000 --token=value`{{}}  
-the value for token is the token returned from cloud side.
+[Service]
+**Environment=CHECK_EDGECORE_ENVIRONMENT='false'**  --add this line
+Type=simple
+ExecStart=/usr/local/bin/edgecore
+Restart=always
+RestartSec=10
 
-keadm join will install edgecore and mqtt, and --cloudcore-ipport flag is a mandatory flag.   
-  
-   
-Now you can see KubeEdge edgecore is running.
 
+`vi /etc/kubeedge/config/edgecore.yaml`{{execute}}
+
+edged:
+    **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'
+    cgroupRoot: ""
+    cgroupsPerQOS: true
+
+
+`systemctl daemon-reload && sudo systemctl enable edgecore && sudo systemctl start edgecore`{{execute}}
