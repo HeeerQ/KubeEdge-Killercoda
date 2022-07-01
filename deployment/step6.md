@@ -3,7 +3,7 @@
 add environment config  
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
 
-[Service]
+[Service]  
 **Environment=CHECK_EDGECORE_ENVIRONMENT='false'**  --add this line 
 Type=simple  
 ExecStart=/usr/local/bin/edgecore  
