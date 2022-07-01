@@ -1,5 +1,6 @@
 # Install kind
 
+insatll Kubectl  
 
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/kubectl
@@ -8,9 +9,15 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 ```{{execute}}
 
 
-
+install kind
 ```
 curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.5.1/kind-linux-amd64  
 chmod +x ./kind  
 mv ./kind /usr/local/bin/kind
-```{{execute}}
+```{{execute}}  
+
+
+create cluster  
+`kind create cluster --name my-cluster`{{execute}}
+
+`kubectl get nodes`{{execute}}
