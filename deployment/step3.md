@@ -1,7 +1,7 @@
-# install keadm
+# Setup Cloud Side (KubeEdge Master Node)
 
-Keadm is used to install the cloud and edge components of KubeEdge.
+keadm init will install cloudcore, generate the certs and install the CRDs.
 
-Run the command below to one-click install keadm.
+`keadm init`{{execute HOST1}}
 
-` docker run --rm kubeedge/installation-package:v1.10.0 cat /usr/local/bin/keadm > /usr/local/bin/keadm && chmod +x /usr/local/bin/keadm`{{execute}}
+Now you can see KubeEdge cloudcore is running.
