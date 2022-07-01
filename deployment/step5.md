@@ -1,8 +1,19 @@
-# Setup Cloud Side (KubeEdge Master Node)
+# Setup Edge Side (KubeEdge Worker Node)
 
-keadm init will install cloudcore, generate the certs and install the CRDs.
+Run keadm gettoken in **cloud side** will return the token, which will be used when joining edge nodes.
 
-`keadm init`{{execute HOST1}}
+`keadm gettoken`{{execute}}  
+  
+    
+   
+Next, run keadm join in **edge side** to join edge node.  
+  
+`keadm join --cloudcore-ipport=172.30.1.2:10000 --token=value`{{}}  
+the value for token is the token returned from cloud side.
 
-Now you can see KubeEdge cloudcore is running.
+keadm join will install edgecore and mqtt, and --cloudcore-ipport flag is a mandatory flag.   
+  
+   
+Now you can see KubeEdge edgecore is running.
+
 
