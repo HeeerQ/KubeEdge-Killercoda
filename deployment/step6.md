@@ -14,9 +14,9 @@ RestartSec=10
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}
 
 edged:
-    **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'
-    cgroupRoot: ""
-    cgroupsPerQOS: true
+    **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'  
+    cgroupRoot: ""  
+    cgroupsPerQOS: true  
 
-
+restart  
 `systemctl daemon-reload && sudo systemctl enable edgecore && sudo systemctl start edgecore`{{execute}}
