@@ -22,7 +22,7 @@ RestartSec=10
 
 ```
 edged:  
-    cgroupDriver: systemd                               # change from 'cgroupf' to 'systemd'  
+    cgroupDriver: systemd               # change from 'cgroupf' to 'systemd'  
     cgroupRoot: ""  
     cgroupsPerQOS: true
 ```{{}} 
