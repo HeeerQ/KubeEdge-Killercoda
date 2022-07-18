@@ -9,7 +9,8 @@
   
 `keadm join --cloudcore-ipport=172.30.1.2:10000 --token=${token_value}`{{execute}}  
 
---cloudcore-ipport是必选参数，应与cloudcore的advertise-address保持一致；--token值为上一步的返回值。
+--cloudcore-ipport是必选参数，应与cloudcore的advertise-address保持一致；     
+--token值为上一步的返回值。
 <br> 
 <br>
 **现在你可以看到KubeEdge的edgecore已被成功创建。**
