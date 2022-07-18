@@ -14,7 +14,7 @@ Next, run keadm join to join edge node.
 
 keadm join will install edgecore and mqtt, and --cloudcore-ipport flag is a mandatory flag.   
   
-   
-Now you can see KubeEdge edgecore is running.
+<br>   
+**Now you can see KubeEdge edgecore is running.**
 
 
