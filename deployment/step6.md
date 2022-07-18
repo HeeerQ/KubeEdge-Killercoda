@@ -16,7 +16,7 @@ Restart=always
 RestartSec=10
 ```{{}}     
 <br>
-<br>
+
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}     
 
 ```
