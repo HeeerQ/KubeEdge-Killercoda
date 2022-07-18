@@ -4,7 +4,7 @@ In this step, we are going to change some config.
 
 <br>
 <br>
-Open the file using following command, and add the comment line.
+Open the file using following command, and add the comment line.   
 
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
 
@@ -18,7 +18,7 @@ RestartSec=10
 ```{{}}     
 <br>
 
-Open the file using following command, and modify the comment line.
+Open the file using following command, and modify the comment line.   
 
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}    
 
