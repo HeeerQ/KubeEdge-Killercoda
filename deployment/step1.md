@@ -1,5 +1,5 @@
 # Install kind   
-   
+<br> 
 Kind is a tool for running local Kubernetes clusters using Docker container “nodes”.
 
 Run the command below to intsall kind:
