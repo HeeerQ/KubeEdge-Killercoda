@@ -2,7 +2,7 @@
 <br>
 Run keadm gettoken will return the token, which will be used when joining edge nodes. Save the returned value to the variable token_value.
 
-`token_value=$(keadm gettoken)`{{execute}}  
+`token_value=$(keadm gettoken)`{{execute}}
 <br>
 <br>
 Next, run keadm join to join edge node.  
@@ -11,7 +11,8 @@ Next, run keadm join to join edge node.
 
 
 keadm join will install edgecore and mqtt, and --cloudcore-ipport flag is a mandatory flag.   
-<br>     
+<br> 
+<br>
 **Now you can see KubeEdge edgecore is running.**
 
 
