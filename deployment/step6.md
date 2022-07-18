@@ -1,7 +1,7 @@
 #  
-In this step 
+In this step, we are going to change some config.
 
-Because we now run cloudcore and edgecore at the same host, we need to add environment config. open the file using following command, and add the comment line.
+Open the file using following command, and add the comment line.
 
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
 
@@ -13,19 +13,18 @@ ExecStart=/usr/local/bin/edgecore
 Restart=always  
 RestartSec=10
 ```{{}}     
-
-
-
+<br>
+<br>
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}     
 
 ```
 edged:  
-    **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'  
+    cgroupDriver: systemd  --change from 'cgroupf' to 'systemd'  
     cgroupRoot: ""  
     cgroupsPerQOS: true
 ```{{}} 
-      
-      
-      
+<br>
+<br>
+<br>
 Reload  
 `systemctl daemon-reload && sudo systemctl enable edgecore && sudo systemctl start edgecore`{{execute}}
