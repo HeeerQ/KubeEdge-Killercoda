@@ -12,7 +12,8 @@ Type=simple
 ExecStart=/usr/local/bin/edgecore  
 Restart=always  
 RestartSec=10
-```{{}} 
+```{{}}     
+
 
 
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}
