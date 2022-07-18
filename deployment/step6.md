@@ -1,10 +1,11 @@
-#  
+# Change some configs
 In this step, we are going to change some config.
 
 Open the file using following command, and add the comment line.
+<br>
+
 
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
-<br>
 
 ```
 [Service]  
