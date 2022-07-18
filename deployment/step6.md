@@ -17,7 +17,7 @@ RestartSec=10
 ```{{}}     
 <br>
 
-`vi /etc/kubeedge/config/edgecore.yaml`{{execute}}     
+`vi /etc/kubeedge/config/edgecore.yaml`{{execute}}    
 
 ```
 edged:  
