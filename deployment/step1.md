@@ -9,9 +9,8 @@ chmod +x ./kind
 mv ./kind /usr/local/bin/kind
 ```{{execute}}  
     
-      
-       
-       
+<br>
+<br>
 
 In order to manage the cluster later using the CLI, install Kubectl：    
 ```
