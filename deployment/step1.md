@@ -1,6 +1,7 @@
-# Install kind
+# Install kind   
+   
+Kind is a tool for running local Kubernetes clusters using Docker container “nodes”.
 
-Kind is a tool for running local Kubernetes clusters using Docker container “nodes”.    
 Perform following steps to intsall kind:
 ```
 curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.11.1/kind-linux-amd64  
