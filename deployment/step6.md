@@ -31,5 +31,6 @@ edged:
 <br>
 <br>
 
-Reload the edgecore.
+Reload the edgecore.    
+
 `systemctl daemon-reload && sudo systemctl enable edgecore && sudo systemctl start edgecore`{{execute}}
