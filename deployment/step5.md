@@ -1,9 +1,8 @@
 # Setup Edge Side (KubeEdge Worker Node)
-
+<br>
 Run keadm gettoken will return the token, which will be used when joining edge nodes. Save the returned value to the variable token_value.
 
 `token_value=$(keadm gettoken)`{{execute}}  
-
 <br>
 <br>
 
