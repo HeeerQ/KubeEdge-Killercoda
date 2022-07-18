@@ -1,4 +1,4 @@
-# install keadm
+# Install keadm
 
 Keadm is used to install the cloud and edge components of KubeEdge.
 
