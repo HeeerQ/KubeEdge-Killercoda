@@ -1,4 +1,4 @@
-# Check 
+# Check deloyment
 
 Check the state of nodes 
 
