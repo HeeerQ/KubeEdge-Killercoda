@@ -1,5 +1,5 @@
 # Check deloyment
-
+<br>
 Check the state of nodes 
 
 `kubectl get node`{{execute}}  
