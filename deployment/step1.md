@@ -7,7 +7,10 @@ curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.11.
 chmod +x ./kind  
 mv ./kind /usr/local/bin/kind
 ```{{execute}}  
-
+    
+      
+       
+       
 
 In order to manage the cluster later using the CLI, install Kubectl：    
 ```
