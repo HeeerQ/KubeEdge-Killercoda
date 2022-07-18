@@ -4,7 +4,7 @@
 
 <br>
 <br>
-使用提供的命令行打开文件, 并增加注释行。    
+使用提供的命令行打开文件, 并增加注释行。      
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
 
 ```
