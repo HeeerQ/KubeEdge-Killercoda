@@ -18,7 +18,7 @@ RestartSec=10
 
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}     
 
-```   
+```
 edged:  
     **cgroupDriver: systemd**  --change from 'cgroupf' to 'systemd'  
     cgroupRoot: ""  
