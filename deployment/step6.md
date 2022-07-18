@@ -2,9 +2,10 @@
 <br>
 In this step, we are going to change some config.
 
+<br>
+<br>
 Open the file using following command, and add the comment line.
-<br>
-<br>
+
 `vi /etc/systemd/system/edgecore.service`{{execute}}  
 
 ```
@@ -17,6 +18,8 @@ RestartSec=10
 ```{{}}     
 <br>
 
+Open the file using following command, and modify the comment line.
+
 `vi /etc/kubeedge/config/edgecore.yaml`{{execute}}    
 
 ```
@@ -28,5 +31,5 @@ edged:
 <br>
 <br>
 
-Reload  
+Reload the edgecore.
 `systemctl daemon-reload && sudo systemctl enable edgecore && sudo systemctl start edgecore`{{execute}}
