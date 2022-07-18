@@ -9,7 +9,7 @@ Open the file using following command, and add the comment line.
 
 ```
 [Service]  
-Environment=CHECK_EDGECORE_ENVIRONMENT='false'  #add this line   
+Environment=CHECK_EDGECORE_ENVIRONMENT='false'  # add this line   
 Type=simple  
 ExecStart=/usr/local/bin/edgecore  
 Restart=always  
@@ -22,7 +22,7 @@ RestartSec=10
 
 ```
 edged:  
-    cgroupDriver: systemd  #change from 'cgroupf' to 'systemd'  
+    cgroupDriver: systemd  # change from 'cgroupf' to 'systemd'  
     cgroupRoot: ""  
     cgroupsPerQOS: true
 ```{{}} 
