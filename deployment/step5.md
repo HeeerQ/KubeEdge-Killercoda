@@ -5,7 +5,6 @@ Run keadm gettoken will return the token, which will be used when joining edge n
 `token_value=$(keadm gettoken)`{{execute}}  
 <br>
 <br>
-
 Next, run keadm join to join edge node.  
   
 `keadm join --cloudcore-ipport=172.30.1.2:10000 --token=${token_value}`{{execute}}  
